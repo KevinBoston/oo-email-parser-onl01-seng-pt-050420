@@ -10,8 +10,8 @@ class EmailAddressParser
   end
  
   def parse
-    parsed = @email_addresses.split(/[,| ]/) #/
-    parsed.uniq.flatten
+    parsed = @email_addresses.split(/,| /) #/
+    parsed.uniq
     @email_addresses = parsed
     @email_addresses
   end
